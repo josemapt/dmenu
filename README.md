@@ -1,1 +1,1 @@
-# dmenu
+# dmenu-config
