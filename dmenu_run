@@ -1,2 +1,2 @@
 #!/bin/sh
-dmenu_path | dmenu "$@" | ${SHELL:-"/bin/sh"} &
+exe=`dmenu_path | dmenu -r ${1+"$@"}` && exec $exe
