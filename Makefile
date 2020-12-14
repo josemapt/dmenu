@@ -16,8 +16,8 @@ options:
 
 $(OBJ): config.h config.mk drw.h
 
-dmenu: dmenu.o drw.o
-	$(CC) -o $@ dmenu.o drw.o $(LDFLAGS)
+dmenu: drw.o
+	$(CC) -o $@ drw.o $(LDFLAGS)
 
 clean:
 	rm -f dmenu $(OBJ) dmenu-$(VERSION).tar.gz
