@@ -14,7 +14,7 @@ options:
 .c.o:
 	$(CC) -c $(CFLAGS) $<
 
-$(OBJ): config.h config.mk drw.h
+$(OBJ): config.mk drw.h
 
 dmenu: drw.o
 	$(CC) -o $@ drw.o $(LDFLAGS)
