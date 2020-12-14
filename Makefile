@@ -1,4 +1,4 @@
-#include <config.mk>
+include config.mk
 
 SRC = drw.c dmenu.c util.c
 OBJ = $(SRC:.c=.o)
