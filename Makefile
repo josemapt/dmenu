@@ -43,8 +43,8 @@ install: all
 	chmod 755 $(DESTDIR)$(PREFIX)/bin/dmenu
 	chmod 755 $(DESTDIR)$(PREFIX)/bin/dmenu_path
 	chmod 755 $(DESTDIR)$(PREFIX)/bin/dmenu_run
-	sed "s/VERSION/$(VERSION)/g" < dmenu.1 > $(DESTDIR)$(PREFIX)/man1/dmenu.1
-	chmod 644 $(DESTDIR)$(PREFIX)/man1/dmenu.1
+	sed "s/VERSION/$(VERSION)/g" < dmenu.1 > $(DESTDIR)$(MANPREFIX)/man1/dmenu.1
+	chmod 644 $(DESTDIR)$(MANPREFIX)/man1/dmenu.1
 
 uninstall:
 	rm -f $(DESTDIR)$(PREFIX)/bin/dmenu\
