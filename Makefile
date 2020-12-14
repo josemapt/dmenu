@@ -1,6 +1,6 @@
 include config.mk
 
-SRC = drw.c dmenu.c
+SRC = dmenu.c
 OBJ = $(SRC:.c=.o)
 
 all: options dmenu
@@ -14,10 +14,7 @@ options:
 .c.o:
 	$(CC) -c $(CFLAGS) $<
 
-$(OBJ): config.mk drw.h
-
-dmenu: drw.o
-	$(CC) -o $@ drw.o $(LDFLAGS)
+$(OBJ): config.mk
 
 clean:
 	rm -f dmenu $(OBJ) dmenu-$(VERSION).tar.gz
