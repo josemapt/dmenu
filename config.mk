@@ -1,6 +1,3 @@
-# dmenu - dynamic menu
-# See LICENSE file for copyright and license details.
-
 # dmenu version
 VERSION = 5.0
 
